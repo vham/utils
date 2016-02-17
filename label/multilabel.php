@@ -51,8 +51,6 @@ $zpl = $zpl."^FO630,590^ASN,15,10^FD".$bulto."^FS";
 $zpl = $zpl."^FO690,625^ASN,15,10^FD".$rampa."^FS^XZ";
 $url_api = $url_api.$zpl;
 
-echo $zpl;
-
 $labels = intval ($labels);
 $current_label = 0;
 if ($labels%6 == 0) {
