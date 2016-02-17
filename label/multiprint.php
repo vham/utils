@@ -438,11 +438,10 @@
       var pModeOptions = ["RAW (Zebra)","Impresora Normal"];
       loadSelect('comboSelectPrintMode',pModeOptions);
       loadPreview('comboSelectPrintMode');
-      //window["deployQZ"] = typeof(deployQZ) == "function" ? deployQZ : deployQZApplet;
+      window["deployQZ"] = typeof(deployQZ) == "function" ? deployQZ : deployQZApplet;
 
-      //deployQZ();
-      //findPrinters();
-      loadPreview('raw')
+      deployQZ();
+      findPrinters();
     }
 
     function printLabels() {
@@ -488,5 +487,3 @@
   </div>
 </body>
 </html>
-
-<!-- -->
