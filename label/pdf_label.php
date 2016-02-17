@@ -22,7 +22,8 @@ $result = curl_exec($curl);
 if (curl_getinfo($curl, CURLINFO_HTTP_CODE) == 200) {
     $file = fopen("labelx3.pdf", "w"); // change file name for PNG images
     fwrite($file, $result);
-    fwrite($file, $result);
+    fclose($file);
+    $file = fopen("labelx3.pdf", "a");
     fwrite($file, $result);
     fclose($file);
 } else {
