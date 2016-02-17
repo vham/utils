@@ -1,0 +1,20 @@
+.labels input {
+    background-color: #DFE767;
+    margin-bottom: 10px;
+}
+
+.head div {
+    color: #6E6E6E;
+    background-color: #0F0F0F;
+}
+
+.fixed_form {
+  color: #FFFFFF;
+  background-color: #6E6E6E;
+  //position: fixed;
+}
+
+.btn {
+  margin-top: 10px;
+  margin-bottom: auto;
+}
