@@ -36,16 +36,18 @@
  deployQZ();
 
  function getCertificate(callback) {
-     /*
+
      $.ajax({
          method: 'GET',
-         url: 'assets/auth/public-key.txt',
+         //url: 'assets/auth/public-key.txt',
+         url: 'public-key.txt',
          async: false,
          success: callback // Data returned from ajax call should be the site certificate
      });
-     */
+
 
      //Non-ajax method, only include public key and intermediate key
+     /*
      callback("-----BEGIN CERTIFICATE-----\n" +
          "MIIFAzCCAuugAwIBAgICEAIwDQYJKoZIhvcNAQEFBQAwgZgxCzAJBgNVBAYTAlVT\n" +
          "MQswCQYDVQQIDAJOWTEbMBkGA1UECgwSUVogSW5kdXN0cmllcywgTExDMRswGQYD\n" +
@@ -106,6 +108,7 @@
          "2ur4rDErnHsiphBgZB71C5FD4cdfSONTsYxmPmyUb5T+KLUouxZ9B0Wh28ucc1Lp\n" +
          "rbO7BnjW\n" +
          "-----END CERTIFICATE-----\n");
+         */
  }
 
  function signRequest(toSign, callback) {
