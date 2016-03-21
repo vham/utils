@@ -112,7 +112,7 @@
  }
 
  function signRequest(toSign, callback) {
-     /*
+     
      $.ajax({
          method: 'GET',
          contentType: "text/plain",
@@ -120,7 +120,7 @@
          async: false,
          success: callback // Data returned from ajax call should be the signature
      });
-     */
+
 
      //Send unsigned messages to socket - users will then have to Allow/Deny each print request
      callback();
